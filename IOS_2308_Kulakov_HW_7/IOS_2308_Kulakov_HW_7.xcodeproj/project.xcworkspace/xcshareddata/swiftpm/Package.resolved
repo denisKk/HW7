@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "artinstitutechicagonetworking",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/denisKk/ArtInstituteChicagoNetworking.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "89473b017de00703282b17eb1edbd29be09f3489"
+      }
+    },
+    {
+      "identity" : "clevelandmuseumnetworking",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/denisKk/ClevelandMuseumNetworking.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "fd1a1ca637a83cc4d12e37cd9f13c164c59aee3a"
+      }
+    }
+  ],
+  "version" : 2
+}

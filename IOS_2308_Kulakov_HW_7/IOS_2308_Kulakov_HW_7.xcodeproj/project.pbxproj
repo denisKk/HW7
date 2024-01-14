@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B81F514C2B0D70F100765A44 /* ArtworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F512E2B0D70F100765A44 /* ArtworkModel.swift */; };
+		B81F514D2B0D70F100765A44 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81F51302B0D70F100765A44 /* Preview Assets.xcassets */; };
+		B81F514E2B0D70F100765A44 /* RandomAccessCollection+Last.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F51322B0D70F100765A44 /* RandomAccessCollection+Last.swift */; };
+		B81F514F2B0D70F100765A44 /* String+HtmlAttributed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F51332B0D70F100765A44 /* String+HtmlAttributed.swift */; };
+		B81F51552B0D70F100765A44 /* ClevelandMuseumNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F51402B0D70F100765A44 /* ClevelandMuseumNetworkService.swift */; };
+		B81F51562B0D70F100765A44 /* ArtInstituteChicagoNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F51412B0D70F100765A44 /* ArtInstituteChicagoNetworkService.swift */; };
+		B81F515C2B0D70F100765A44 /* ArtworksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F51492B0D70F100765A44 /* ArtworksApp.swift */; };
+		B81F515D2B0D70F100765A44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81F514B2B0D70F100765A44 /* Assets.xcassets */; };
+		B81F51642B0D710F00765A44 /* UI in Resources */ = {isa = PBXBuildFile; fileRef = B81F515F2B0D710F00765A44 /* UI */; };
+		B81F516B2B0EAF4E00765A44 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F516A2B0EAF4E00765A44 /* ServiceLocator.swift */; };
+		B838C6A72ADED37200E74DF8 /* UI in Frameworks */ = {isa = PBXBuildFile; productRef = B838C6A62ADED37200E74DF8 /* UI */; };
+		B8614E5B2B53439B001DF305 /* ClevelandMuseumNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = B8614E5A2B53439B001DF305 /* ClevelandMuseumNetworking */; };
+		B8614E5E2B5345D2001DF305 /* ArtInstituteChicagoNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = B8614E5D2B5345D2001DF305 /* ArtInstituteChicagoNetworking */; };
+		B8614E652B535B7F001DF305 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8614E642B535B7F001DF305 /* Store.swift */; };
+		B8614E772B535BAE001DF305 /* FullImageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8614E682B535BAE001DF305 /* FullImageScreen.swift */; };
+		B8614E782B535BAE001DF305 /* ArtworkScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8614E6A2B535BAE001DF305 /* ArtworkScreen.swift */; };
+		B8614E792B535BAE001DF305 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8614E6C2B535BAE001DF305 /* MainScreen.swift */; };
+		B8614E7A2B535BAE001DF305 /* LikedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8614E6F2B535BAE001DF305 /* LikedList.swift */; };
+		B8614E7B2B535BAE001DF305 /* ArtworkListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8614E712B535BAE001DF305 /* ArtworkListCell.swift */; };
+		B8614E7C2B535BAE001DF305 /* ArtworksListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8614E722B535BAE001DF305 /* ArtworksListView.swift */; };
+		B8614E7D2B535BAE001DF305 /* ArtworkListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8614E732B535BAE001DF305 /* ArtworkListViewModel.swift */; };
+		B8614E7E2B535BAE001DF305 /* HeaderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8614E752B535BAE001DF305 /* HeaderListView.swift */; };
+		B8614E7F2B535BAE001DF305 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8614E762B535BAE001DF305 /* HeaderCell.swift */; };
+		B89EC5A42AEB12040017A28C /* ClevelandMuseumNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = B89EC5A32AEB12040017A28C /* ClevelandMuseumNetworking */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B80E5F0C2AD88A420039961F /* IOS_2308_Kulakov_HW_7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_2308_Kulakov_HW_7.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B81F512E2B0D70F100765A44 /* ArtworkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtworkModel.swift; sourceTree = "<group>"; };
+		B81F51302B0D70F100765A44 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B81F51322B0D70F100765A44 /* RandomAccessCollection+Last.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RandomAccessCollection+Last.swift"; sourceTree = "<group>"; };
+		B81F51332B0D70F100765A44 /* String+HtmlAttributed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+HtmlAttributed.swift"; sourceTree = "<group>"; };
+		B81F51402B0D70F100765A44 /* ClevelandMuseumNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClevelandMuseumNetworkService.swift; sourceTree = "<group>"; };
+		B81F51412B0D70F100765A44 /* ArtInstituteChicagoNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtInstituteChicagoNetworkService.swift; sourceTree = "<group>"; };
+		B81F51492B0D70F100765A44 /* ArtworksApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtworksApp.swift; sourceTree = "<group>"; };
+		B81F514B2B0D70F100765A44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B81F515F2B0D710F00765A44 /* UI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UI; sourceTree = "<group>"; };
+		B81F516A2B0EAF4E00765A44 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		B820BCD02AF26128001E4A3C /* IOS-2308-Kulakov-HW-7-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IOS-2308-Kulakov-HW-7-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B8614E642B535B7F001DF305 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		B8614E682B535BAE001DF305 /* FullImageScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullImageScreen.swift; sourceTree = "<group>"; };
+		B8614E6A2B535BAE001DF305 /* ArtworkScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtworkScreen.swift; sourceTree = "<group>"; };
+		B8614E6C2B535BAE001DF305 /* MainScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		B8614E6F2B535BAE001DF305 /* LikedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikedList.swift; sourceTree = "<group>"; };
+		B8614E712B535BAE001DF305 /* ArtworkListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtworkListCell.swift; sourceTree = "<group>"; };
+		B8614E722B535BAE001DF305 /* ArtworksListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtworksListView.swift; sourceTree = "<group>"; };
+		B8614E732B535BAE001DF305 /* ArtworkListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtworkListViewModel.swift; sourceTree = "<group>"; };
+		B8614E752B535BAE001DF305 /* HeaderListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderListView.swift; sourceTree = "<group>"; };
+		B8614E762B535BAE001DF305 /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B80E5F092AD88A420039961F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B89EC5A42AEB12040017A28C /* ClevelandMuseumNetworking in Frameworks */,
+				B838C6A72ADED37200E74DF8 /* UI in Frameworks */,
+				B8614E5B2B53439B001DF305 /* ClevelandMuseumNetworking in Frameworks */,
+				B8614E5E2B5345D2001DF305 /* ArtInstituteChicagoNetworking in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B80E5F032AD88A420039961F = {
+			isa = PBXGroup;
+			children = (
+				B81F512C2B0D70F100765A44 /* IOS_2308_Kulakov_HW_7 */,
+				B820BCD02AF26128001E4A3C /* IOS-2308-Kulakov-HW-7-Info.plist */,
+				B80E5F0D2AD88A420039961F /* Products */,
+				B838C6A22ADEA1A800E74DF8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B80E5F0D2AD88A420039961F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B80E5F0C2AD88A420039961F /* IOS_2308_Kulakov_HW_7.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B81F512C2B0D70F100765A44 /* IOS_2308_Kulakov_HW_7 */ = {
+			isa = PBXGroup;
+			children = (
+				B81F51482B0D70F100765A44 /* Application */,
+				B81F51692B0EAF2E00765A44 /* Services */,
+				B81F515E2B0D710F00765A44 /* Modules */,
+				B8614E662B535BAE001DF305 /* Screens */,
+				B81F512D2B0D70F100765A44 /* Models */,
+				B81F51312B0D70F100765A44 /* Extensions */,
+				B81F514A2B0D70F100765A44 /* Assets */,
+				B81F512F2B0D70F100765A44 /* Preview Content */,
+			);
+			path = IOS_2308_Kulakov_HW_7;
+			sourceTree = "<group>";
+		};
+		B81F512D2B0D70F100765A44 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B81F512E2B0D70F100765A44 /* ArtworkModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B81F512F2B0D70F100765A44 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B81F51302B0D70F100765A44 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B81F51312B0D70F100765A44 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B81F51322B0D70F100765A44 /* RandomAccessCollection+Last.swift */,
+				B81F51332B0D70F100765A44 /* String+HtmlAttributed.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B81F51482B0D70F100765A44 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B81F51492B0D70F100765A44 /* ArtworksApp.swift */,
+				B8614E642B535B7F001DF305 /* Store.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B81F514A2B0D70F100765A44 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B81F514B2B0D70F100765A44 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B81F515E2B0D710F00765A44 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B81F515F2B0D710F00765A44 /* UI */,
+			);
+			name = Modules;
+			path = ../../Modules;
+			sourceTree = "<group>";
+		};
+		B81F51692B0EAF2E00765A44 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B81F516A2B0EAF4E00765A44 /* ServiceLocator.swift */,
+				B81F51402B0D70F100765A44 /* ClevelandMuseumNetworkService.swift */,
+				B81F51412B0D70F100765A44 /* ArtInstituteChicagoNetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B838C6A22ADEA1A800E74DF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8614E662B535BAE001DF305 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B8614E6B2B535BAE001DF305 /* Main */,
+				B8614E692B535BAE001DF305 /* ArtworkDetail */,
+				B8614E672B535BAE001DF305 /* FullImage */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B8614E672B535BAE001DF305 /* FullImage */ = {
+			isa = PBXGroup;
+			children = (
+				B8614E682B535BAE001DF305 /* FullImageScreen.swift */,
+			);
+			path = FullImage;
+			sourceTree = "<group>";
+		};
+		B8614E692B535BAE001DF305 /* ArtworkDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B8614E6A2B535BAE001DF305 /* ArtworkScreen.swift */,
+			);
+			path = ArtworkDetail;
+			sourceTree = "<group>";
+		};
+		B8614E6B2B535BAE001DF305 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B8614E6C2B535BAE001DF305 /* MainScreen.swift */,
+				B8614E6D2B535BAE001DF305 /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B8614E6D2B535BAE001DF305 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B8614E6E2B535BAE001DF305 /* LikedList */,
+				B8614E702B535BAE001DF305 /* ArtworksList */,
+				B8614E742B535BAE001DF305 /* Header */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B8614E6E2B535BAE001DF305 /* LikedList */ = {
+			isa = PBXGroup;
+			children = (
+				B8614E6F2B535BAE001DF305 /* LikedList.swift */,
+			);
+			path = LikedList;
+			sourceTree = "<group>";
+		};
+		B8614E702B535BAE001DF305 /* ArtworksList */ = {
+			isa = PBXGroup;
+			children = (
+				B8614E712B535BAE001DF305 /* ArtworkListCell.swift */,
+				B8614E722B535BAE001DF305 /* ArtworksListView.swift */,
+				B8614E732B535BAE001DF305 /* ArtworkListViewModel.swift */,
+			);
+			path = ArtworksList;
+			sourceTree = "<group>";
+		};
+		B8614E742B535BAE001DF305 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				B8614E752B535BAE001DF305 /* HeaderListView.swift */,
+				B8614E762B535BAE001DF305 /* HeaderCell.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B80E5F0B2AD88A420039961F /* IOS_2308_Kulakov_HW_7 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B80E5F1A2AD88A440039961F /* Build configuration list for PBXNativeTarget "IOS_2308_Kulakov_HW_7" */;
+			buildPhases = (
+				B80E5F082AD88A420039961F /* Sources */,
+				B80E5F092AD88A420039961F /* Frameworks */,
+				B80E5F0A2AD88A420039961F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IOS_2308_Kulakov_HW_7;
+			packageProductDependencies = (
+				B838C6A62ADED37200E74DF8 /* UI */,
+				B89EC5A32AEB12040017A28C /* ClevelandMuseumNetworking */,
+				B8614E5A2B53439B001DF305 /* ClevelandMuseumNetworking */,
+				B8614E5D2B5345D2001DF305 /* ArtInstituteChicagoNetworking */,
+			);
+			productName = IOS_2308_Kulakov_HW_2;
+			productReference = B80E5F0C2AD88A420039961F /* IOS_2308_Kulakov_HW_7.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B80E5F042AD88A420039961F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B80E5F0B2AD88A420039961F = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = B80E5F072AD88A420039961F /* Build configuration list for PBXProject "IOS_2308_Kulakov_HW_7" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B80E5F032AD88A420039961F;
+			packageReferences = (
+				B8614E592B53439B001DF305 /* XCRemoteSwiftPackageReference "ClevelandMuseumNetworking" */,
+				B8614E5C2B5345D2001DF305 /* XCRemoteSwiftPackageReference "ArtInstituteChicagoNetworking" */,
+			);
+			productRefGroup = B80E5F0D2AD88A420039961F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B80E5F0B2AD88A420039961F /* IOS_2308_Kulakov_HW_7 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B80E5F0A2AD88A420039961F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B81F515D2B0D70F100765A44 /* Assets.xcassets in Resources */,
+				B81F51642B0D710F00765A44 /* UI in Resources */,
+				B81F514D2B0D70F100765A44 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B80E5F082AD88A420039961F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8614E772B535BAE001DF305 /* FullImageScreen.swift in Sources */,
+				B8614E652B535B7F001DF305 /* Store.swift in Sources */,
+				B81F514E2B0D70F100765A44 /* RandomAccessCollection+Last.swift in Sources */,
+				B8614E7A2B535BAE001DF305 /* LikedList.swift in Sources */,
+				B8614E792B535BAE001DF305 /* MainScreen.swift in Sources */,
+				B81F515C2B0D70F100765A44 /* ArtworksApp.swift in Sources */,
+				B81F51562B0D70F100765A44 /* ArtInstituteChicagoNetworkService.swift in Sources */,
+				B81F514F2B0D70F100765A44 /* String+HtmlAttributed.swift in Sources */,
+				B8614E782B535BAE001DF305 /* ArtworkScreen.swift in Sources */,
+				B81F51552B0D70F100765A44 /* ClevelandMuseumNetworkService.swift in Sources */,
+				B81F516B2B0EAF4E00765A44 /* ServiceLocator.swift in Sources */,
+				B81F514C2B0D70F100765A44 /* ArtworkModel.swift in Sources */,
+				B8614E7D2B535BAE001DF305 /* ArtworkListViewModel.swift in Sources */,
+				B8614E7B2B535BAE001DF305 /* ArtworkListCell.swift in Sources */,
+				B8614E7C2B535BAE001DF305 /* ArtworksListView.swift in Sources */,
+				B8614E7F2B535BAE001DF305 /* HeaderCell.swift in Sources */,
+				B8614E7E2B535BAE001DF305 /* HeaderListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B80E5F182AD88A440039961F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B80E5F192AD88A440039961F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B80E5F1B2AD88A440039961F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IOS_2308_Kulakov_HW_7/Preview Content\"";
+				DEVELOPMENT_TEAM = 6464RAB4U4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IOS-2308-Kulakov-HW-4-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "A r t";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kulakov.IOS-2308-Kulakov-HW-7";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B80E5F1C2AD88A440039961F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IOS_2308_Kulakov_HW_7/Preview Content\"";
+				DEVELOPMENT_TEAM = 6464RAB4U4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IOS-2308-Kulakov-HW-4-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "A r t";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kulakov.IOS-2308-Kulakov-HW-7";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B80E5F072AD88A420039961F /* Build configuration list for PBXProject "IOS_2308_Kulakov_HW_7" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B80E5F182AD88A440039961F /* Debug */,
+				B80E5F192AD88A440039961F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B80E5F1A2AD88A440039961F /* Build configuration list for PBXNativeTarget "IOS_2308_Kulakov_HW_7" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B80E5F1B2AD88A440039961F /* Debug */,
+				B80E5F1C2AD88A440039961F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B8614E592B53439B001DF305 /* XCRemoteSwiftPackageReference "ClevelandMuseumNetworking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/denisKk/ClevelandMuseumNetworking.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		B8614E5C2B5345D2001DF305 /* XCRemoteSwiftPackageReference "ArtInstituteChicagoNetworking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/denisKk/ArtInstituteChicagoNetworking.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B838C6A62ADED37200E74DF8 /* UI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UI;
+		};
+		B8614E5A2B53439B001DF305 /* ClevelandMuseumNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8614E592B53439B001DF305 /* XCRemoteSwiftPackageReference "ClevelandMuseumNetworking" */;
+			productName = ClevelandMuseumNetworking;
+		};
+		B8614E5D2B5345D2001DF305 /* ArtInstituteChicagoNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8614E5C2B5345D2001DF305 /* XCRemoteSwiftPackageReference "ArtInstituteChicagoNetworking" */;
+			productName = ArtInstituteChicagoNetworking;
+		};
+		B89EC5A32AEB12040017A28C /* ClevelandMuseumNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ClevelandMuseumNetworking;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B80E5F042AD88A420039961F /* Project object */;
+}
