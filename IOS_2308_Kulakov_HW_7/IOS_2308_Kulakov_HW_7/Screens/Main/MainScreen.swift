@@ -33,9 +33,9 @@ struct MainScreen: View {
     var artworksList: some View {
         switch selectedTab {
         case .aic:
-            ArtworksList(artworkListVM: ArtworkListViewModel(service: ArtInstituteChicagoNetworkService.self))
+            ArtworksList(artworkListVM: ArtworkListViewModel(service: ChicagoNetwork.self, database: LocalFiles.self))
         case .cma:
-            ArtworksList(artworkListVM: ArtworkListViewModel(service: ClevelandMuseumNetworkService.self))
+            ArtworksList(artworkListVM: ArtworkListViewModel(service: ClevelandNetwork.self, database: LocalFiles.self))
         case .liked:
             LikedList()
         }

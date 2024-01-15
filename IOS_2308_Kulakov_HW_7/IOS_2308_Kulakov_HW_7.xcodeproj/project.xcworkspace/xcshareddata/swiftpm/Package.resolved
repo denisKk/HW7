@@ -6,7 +6,7 @@
       "location" : "https://github.com/denisKk/ArtInstituteChicagoNetworking.git",
       "state" : {
         "branch" : "main",
-        "revision" : "89473b017de00703282b17eb1edbd29be09f3489"
+        "revision" : "4ece7907ea3031db43e749886382e1d328859948"
       }
     },
     {
@@ -15,7 +15,7 @@
       "location" : "https://github.com/denisKk/ClevelandMuseumNetworking.git",
       "state" : {
         "branch" : "main",
-        "revision" : "fd1a1ca637a83cc4d12e37cd9f13c164c59aee3a"
+        "revision" : "04a1efdffcdef073ec6a828fe8fc461bd67d70e7"
       }
     }
   ],

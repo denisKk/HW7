@@ -5,7 +5,7 @@ import UI
 @main
 struct ArtworksApp: App {
  
-    @StateObject var store: Store = .init()
+    @StateObject var store: Store = .init(database: LocalFiles.service)
     
     var body: some Scene {
         WindowGroup {

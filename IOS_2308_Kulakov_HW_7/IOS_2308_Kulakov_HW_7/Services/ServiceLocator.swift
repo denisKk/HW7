@@ -4,7 +4,15 @@ import Foundation
 protocol NetworkingService {
     static var service: Self {get}
     
-    func fetch(page: Int, limit: Int, completion: @escaping ([ArtworkModel]) -> ())
+    func fetch(page: Int, limit: Int) async -> [ArtworkModel]
+}
+
+protocol DatabaseService {
+    static var service: Self {get}
+    
+    func fetch(source: String, page: Int, limit: Int) async -> [ArtworkModel]
+    func save(source: String, page: Int, limit: Int, artworks: [ArtworkModel]) async throws
+    func clear(source: String) async throws
 }
 
 protocol IServiceLocator {

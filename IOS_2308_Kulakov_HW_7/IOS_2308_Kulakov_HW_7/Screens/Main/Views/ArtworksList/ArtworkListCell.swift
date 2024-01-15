@@ -48,7 +48,7 @@ struct ArtworkListCell: View {
     
     @ViewBuilder
     private var image: some View {
-        CacheAsyncImage(url: artwork.imageURL, transaction: .init(animation: .easeInOut)) { phase in
+        CacheAsyncImage(id: "\(artwork.id)", url: artwork.imageURL, transaction: .init(animation: .easeInOut)) { phase in
             
             switch phase {
             case .empty:
@@ -113,6 +113,6 @@ struct ArtworkListCell: View {
 struct ArtworkListCell_Previews: PreviewProvider {
     static var previews: some View {
         //                ArtworkListCell(artwork: ArtworkListModel.testData.last!){}
-        ArtworksList(artworkListVM: ArtworkListViewModel(service: ArtInstituteChicagoNetworkService.self))
+        ArtworksList(artworkListVM: ArtworkListViewModel(service: ChicagoNetwork.self, database: LocalFiles.self))
     }
 }

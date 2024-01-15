@@ -59,7 +59,7 @@ extension ArtworkScreen {
     
     @ViewBuilder
     var image: some View {
-        CacheAsyncImage(url: artwork.imageURL) { phase in
+        CacheAsyncImage(id: "\(artwork.id)", url: artwork.imageURL) { phase in
             switch phase {
             case .empty:
                 ProgressView()

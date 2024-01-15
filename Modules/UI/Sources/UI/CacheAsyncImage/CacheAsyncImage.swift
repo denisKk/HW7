@@ -9,17 +9,20 @@ import SwiftUI
 
 public struct CacheAsyncImage<Content>: View where Content: View {
 
+    private let id: String?
     private let url: URL
     private let scale: CGFloat
     private let transaction: Transaction
     private let content: (AsyncImagePhase) -> Content
 
     public init(
+        id: String? = nil,
         url: URL,
         scale: CGFloat = 1.0,
         transaction: Transaction = Transaction(),
         @ViewBuilder content: @escaping (AsyncImagePhase) -> Content
     ) {
+        self.id = id
         self.url = url
         self.scale = scale
         self.transaction = transaction
@@ -28,8 +31,10 @@ public struct CacheAsyncImage<Content>: View where Content: View {
 
     public var body: some View {
 
-        if let cached = ImageCache[url] {
+        if let cached = ImageCache[id] {
             content(.success(cached))
+        } else if let disk = ImageCache.loadFromDisk(id: id) {
+            content(.success(disk))
         } else {
             AsyncImage(
                 url: url,
@@ -43,7 +48,7 @@ public struct CacheAsyncImage<Content>: View where Content: View {
 
     func cacheAndRender(phase: AsyncImagePhase) -> some View {
         if case .success(let image) = phase {
-            ImageCache[url] = image
+            ImageCache[id] = image
         }
 
         return content(phase)
@@ -53,14 +58,56 @@ public struct CacheAsyncImage<Content>: View where Content: View {
 
 
 fileprivate class ImageCache {
-    static private var cache: [URL: Image] = [:]
+    static private var cache: [String: Image] = [:]
+        
+    private static func cacheDirectory() throws -> URL {
+        try FileManager.default.url(for: .cachesDirectory,
+                                    in: .userDomainMask,
+                                    appropriateFor: nil,
+                                    create: false)
+    }
+    
+    private static func fileURL(id: String) throws -> URL {
+        try Self.cacheDirectory()
+            .appendingPathComponent("\(id).png")
+    }
 
-    static subscript(url: URL) -> Image? {
+    static subscript(id: String?) -> Image? {
         get {
-            ImageCache.cache[url]
+            guard let id else {return nil}
+            return ImageCache.cache[id]
         }
         set {
-            ImageCache.cache[url] = newValue
+            guard let id else { return }
+            Self.cache[id] = newValue
+            if let image = newValue {
+                Self.saveOnDisk(id: id, image: image)
+            }
         }
     }
+    
+    fileprivate static func loadFromDisk(id: String?) -> Image? {
+        guard let id else { return nil }
+        guard let fileURL = try? Self.fileURL(id: id) else { return nil }
+        guard let data = try? Data(contentsOf: fileURL) else { return nil }
+        guard let uiImage = UIImage(data: data) else { return nil }
+        let image = Image(uiImage: uiImage)
+        ImageCache[id] = image
+        return image
+    }
+    
+    @MainActor static func render(image: Image) -> UIImage? {
+        let renderer = ImageRenderer(content:image)
+        return renderer.uiImage
+    }
+    
+    fileprivate static func saveOnDisk(id: String, image: Image) {
+        Task {
+            guard let fileURL = try? Self.fileURL(id: id) else { return }
+            guard let uiImage = await render(image: image) else { return }
+            guard let data = uiImage.jpegData(compressionQuality: 0.6) else { return }
+            try? data.write(to: fileURL)
+        }
+    }
+    
 }
