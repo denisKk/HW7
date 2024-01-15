@@ -12,9 +12,10 @@ struct MainScreen: View {
             let height = proxy.size.height
             let isVertical = width < height
             let layout: AnyLayout = isVertical ? AnyLayout(VStackLayout()) : AnyLayout(HStackLayout())
+            let headerLayout: AnyLayout = isVertical ? AnyLayout(HStackLayout()) : AnyLayout(VStackLayout())
             
             layout {
-                HeaderList(selectedTab: $selectedTab)
+                HeaderList(selectedTab: $selectedTab, layout: headerLayout)
                     .frame(
                         width: isVertical ? width : width * 0.38,
                         height: isVertical ? height * 0.29 : height

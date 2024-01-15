@@ -4,6 +4,7 @@ import SwiftUI
 struct HeaderList: View {
     
     @Binding var selectedTab: Headers
+    let layout: AnyLayout
     
     var body: some View {
         ZStack {
@@ -11,7 +12,7 @@ struct HeaderList: View {
             
             TabView(selection: $selectedTab) {
                 ForEach(Headers.allCases, id: \.self.rawValue) { item in
-                    HeaderCell(title: item.description, logo: item.getLogo)
+                    HeaderCell(title: item.description, logo: item.getLogo, layout: layout)
                         .tag(item)
                         .padding(.bottom, 34)
                 }
@@ -23,7 +24,7 @@ struct HeaderList: View {
 
 struct HeaderList_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderList(selectedTab: .constant(.aic))
+        HeaderList(selectedTab: .constant(.aic), layout: AnyLayout(VStackLayout()))
     }
 }
 
